@@ -44,7 +44,10 @@ def map_things(line):
             map_list.loc[len(map_list.index)] = row
     
 def get_min_range(next_workflow, min_value, max_value):
+<<<<<<< Updated upstream
     #find the row that fits the range
+=======
+>>>>>>> Stashed changes
     filtered_rows = map_list[map_list['type'] == next_workflow.value[1]]  
     min_index = filtered_rows['destination_start'].idxmin()
 
